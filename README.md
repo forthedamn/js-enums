@@ -1,4 +1,11 @@
 ### Enum in javascript!
+[![NPM version][npm-image]][npm-url]
+
+
+[npm-image]: https://img.shields.io/npm/v/urllib.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/js-enums
+
+
 
 > npm install js-enums
 
