@@ -1,0 +1,17 @@
+{
+  "name": "js-enums",
+  "version": "1.0.1",
+  "description": "enum in javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "enum jsenum"
+  ],
+  "author": "forthedamn <simonzhong0924@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}
