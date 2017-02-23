@@ -1,6 +1,6 @@
-enum in javascript
+### Enum in javascript!
 
-> npm i js-enums
+> npm install js-enums
 
 ### simple to use
 
