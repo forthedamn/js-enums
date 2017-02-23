@@ -4,11 +4,16 @@
   "description": "enum in javascript",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "ci": "npm run test"
   },
   "keywords": [
     "enum jsenum"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/forthedamn/js-enums.git"
+  },
   "author": "forthedamn <simonzhong0924@gmail.com>",
   "license": "ISC",
   "devDependencies": {
