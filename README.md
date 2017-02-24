@@ -1,11 +1,11 @@
 # js-enums, Enum in javascript!
 
-================
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][codecov-image]][codecov-url]
-[![npm download][download-image]][dowload-url] 
+[![npm download][download-image]][download-url]
+
 
 [npm-image]: https://img.shields.io/npm/v/js-enums.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/js-enums
@@ -47,7 +47,7 @@ status.OPENED.eql('OPENED') // true
 
 ```
 
-### only two APIs
+### APIs
 
 - eql
 
