@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "ci": "npm run test"
+    "ci": "npm run test && npm run cov",
+    "cov": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec"
   },
   "keywords": [
-    "enum jsenum"
+    "enum enums js-enums js-enum"
   ],
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   "author": "forthedamn <simonzhong0924@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "codecov": "^1.0.1",
     "mocha": "^3.2.0"
   }
 }
