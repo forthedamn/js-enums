@@ -140,7 +140,6 @@ class Enum {
       return this.name === param;
     }
 
-    return false;
   }
 }
 

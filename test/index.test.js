@@ -24,7 +24,7 @@ describe('js-enums', () => {
     });
 
     it('declare string', () => {
-      const statusEnum = enums(['OPENED', 'CLOSED']);
+      const statusEnum = enums(['OPENED', 'CLOSED', '123']);
       assert(statusEnum.OPENED.name === 'OPENED');
       assert(statusEnum.OPENED.order === 0);
       assert(statusEnum.CLOSED.order === 1);
@@ -32,20 +32,28 @@ describe('js-enums', () => {
 
     it('invalid param', () => {
       assert.throws(()=> {
-        const enum_1 = enums({});
+        const _enum = enums({});
       }, '[js-enums] param must be Array!');
 
       assert.throws(()=> {
-        const enum_2 = enums([1,2]);
+        const _enum = enums([1,2]);
       }, '[js-enums] invalid type');
 
       assert.throws(()=> {
-        const enum_3 = enums([]);
+        const _enum = enums([]);
       }, '[js-enums] param length must greater than 0!');
 
       assert.throws(()=> {
-        const enum_4 = enums([null]);
+        const _enum = enums([null]);
       }, '[js-enums] enum item cant be undefined or null');
+
+      assert.throws(()=> {
+        const _enum = enums([{name: undefined}]);
+      }, '[js-enums] enum item need a name');
+
+      assert.throws(()=> {
+        const _enum = enums([{name: '123', order: 'error'}]);
+      }, '[js-enums] enum item order must be number');
     });
   })
 
